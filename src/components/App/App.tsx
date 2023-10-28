@@ -13,7 +13,6 @@ import * as S from './style';
 
 function App() {
   const { isFetching, products, fetchProducts } = useProducts();
-
   useEffect(() => {
     fetchProducts();
   }, [fetchProducts]);
